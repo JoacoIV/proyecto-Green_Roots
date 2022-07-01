@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --bg-color: #e8e8e8;
+    --main-color: #ffffff;
+    --secnd-color: #f7f7f7;
+    --detail-color: #a1e4b0;
+    --green: #3f814d;
+    --black: #000000;
+}
+
+/* Header */
+
+body {
+   background-color: var(--bg-color);
+}
+
+
+.header {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1160px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.section {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.navbar, .navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.navbar-list {
+    gap: 20px;
+}
+
+.navbar a {
+    color: black;
+    
+}
+
+.l-item0 {
+    padding: 10px;
+    border: 1px solid var(--detail-color);
+    border-radius: 5px;
+    transition: all .4s ease;
+}
+
+.l-item0:hover {
+    background-color: #a1e4b0;
+}
+
+.l-item {
+    position: relative;
+    padding: 10px;
+}
+
+.l-item:after {
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: var(--detail-color);
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all .5s;
+    will-change: width;
+}
+
+.l-item:hover:after {
+    width: 100%;
+    right: 0;
+}
+
+.navbar i {
+    font-size: 30px;
+    color: var(--detail-color);
+    cursor: pointer;
+    display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+.logo-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+img {
+    height: 50px;
+
+}
+
+@media (max-width:754px) {
+    .navbar i {
+        display: flex;
+    }
+
+    .navbar-list {
+        position: absolute;
+        background-color: var(--main-color);
+        flex-direction: column;
+        top: 150px;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 9898;
+        display: none;
+    }
+
+    #toggle-menu:checked + .navbar-list {
+        display: flex;
+    }
+}
+
+/* Hero */
+
+.hero {
+    margin-top: 10px;
+    height: 500px;
+    background-image: url(./img/hero-huerta1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero-info {
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero-info h1 {
+    font-weight: 400;
+}
+
+
+.hero-info span {
+    color: var(--green);
+    font-weight: 700;
+}
+
+.hero-btn {
+    width: 140px;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    border: none;
+    text-align: center;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.hero-btn:hover {
+    background-color: var(--detail-color);
+    transition: all .4s ease;
+}
+
+@media (max-width:620px) {
+    .hero {
+        justify-content: center;
+    }
+    .hero-info {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Cards */
+
+.cards-container {
+    padding: 40px;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    text-align: center;
+
+    width: 400px;
+    height: 300px;
+}
+
+.card i {
+    font-size: 40px;
+    color: var(--green);
+}
+
+@media (max-width:850px) {
+    .cards-container {
+        flex-wrap: wrap;
+    }
+}
+
+/* Section: Proyectos */
+
+.proyects-container {
+    background-color: var(--secnd-color);
+    padding: 40px;
+}
+
+.proyects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.img-1 {
+    background-image: url(./img/huerta1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-2 {
+    background-image: url(./img/huerta2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-3 {
+    background-image: url(./img/huerta3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-4 {
+    background-image: url(./img/huerta4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-5 {
+    background-image: url(./img/huerta5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-6 {
+    background-image: url(./img/huerta6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
