@@ -20,20 +20,21 @@
                 <label for="toggle-menu"><i class="fas fa-bars"></i></label>
                 <input type="checkbox" id="toggle-menu">
                 <ul class="navbar-list">
-                    <li><a href="#hero" class="l-item">Inicio</a></li>
                     <li><a href="#about-us" class="l-item">Sobre Nosotros</a></li>
-                    <li><a href="#plants" class="l-item">Plantas</a></li>
+                    <li><a href="#sumate" class="l-item">Sumate</a></li>
+                    <li><a href="#contact-us" class="l-item">Contacto</a></li>
                     <li><a href="#login" class="l-item0">Log-In</a></li>
+                    
                 </ul>
             </nav>
         </header>
     </div>
     <!-- Hero -->
-    <div class="hero-container">
+    <div class="hero-container" id="hero">
         <section class="section hero" id="hero">
             <div class="hero-info">
                 <h1>Creá un mundo <span>mas verde.</span></h1>
-                <a href="" class="hero-btn">Ver Proyectos</a>
+                <a href="#about-us" class="hero-btn">Ver Proyectos</a>
             </div>
         </section>
 
@@ -41,25 +42,26 @@
             <div class="card">
                 <i class="fa-solid fa-leaf"></i>
                 <h2>Sumate al Cambio</h2>
-                <p>Queremos promover espacios llenos de vida y repletos de verde, plantando raíces por todo el mundo. Sumate ahora al cambio.</p>
+                <p>Queremos promover espacios llenos de vida y repletos de verde, plantando raíces por todo el mundo.</p>
             </div>
             <div class="card">
                 <i class="fa-solid fa-seedling"></i>
                 <h2>Planta tus raíces</h2>
-                <p>Aportando tu granito de arena podemos lograr nuestro objetivo, llevando nuestras raíces a cualquier parte del mundo. ¡Te invitamos a plantar las tuyas!</p>
+                <p>Aportando tu granito de arena podemos lograr nuestro objetivo, llevando nuestras raíces a cualquier parte del mundo.</p>
             </div>
             <div class="card">
                 <i class="fa-solid fa-spa"></i>
                 <h2>Cosecha lo que siembres</h2>
-                <p>Te invitamos a crear tu propia huerta en el patio de tu casa para poder crear entre todos un ambiente más sustentable.</p>
+                <p>Te invitamos a crear tu propia huerta en la comodidad de tu hogar para poder crear entre todos un ambiente más sustentable.</p>
             </div>
         </div>
     </div>
     <!-- Section: Proyectos -->
-    <div class="proyects-container section">
+    <div class="proyects-container section" id="about-us">
         <section class="proyects">
-            <h2>Proyectos</h2>
-            <p>Estos son algunos de los proyectos que hemos ido sembrando a lo largo de todo este tiempo.</p>
+            <h2>Sobre nosotros</h2>
+            <p>Nos dedicamos a concientizar a las personas para que logren una vida mas sustentable. Con solo una simpre huerta en el patio de tu casa poder lograr una vida mas sana incorporando productos 100% naturales y desde la comodidad de tu hogar. </p>
+            <p>A continuacion te mostramos algunos proyectos realizados por nuestros seguidores. <a href="">Sumate al cambio</a> para lograr entre todos un mundo mas verde.</p>
             <div class="img-container">
                 <div class="img img-1"></div>
                 <div class="img img-2"></div>
@@ -70,6 +72,70 @@
             </div>
         </section>
     </div>
+    <!-- Section: Pasos -->
+    <section class="pasos section" id="sumate">
+        <div class="pasos-container">
+            <div class="text-container">
+                <i class="fa-solid fa-person-digging"></i>
+                <h2>Trabaja la Tierra</h2>
+                <p>Es indispensable limpiar la maleza, airear, mullir y abonar el suelo. Antes de plantar debemos poner a punto la tierra para que las plantas puedan desarrollarse sin problemas.</p>
+            </div>
+            <img src="./img/paso-1.jpg" class="img-pasos" alt="">
+        </div>
+        <div class="pasos-container">
+            <div class="text-container">
+                <i class="fa-solid fa-seedling"></i>
+                <h2>Planta vida</h2>
+                <p>Siempre es recomendable empezar de a poco, quiza con algunos tomates y una pocas plantas de lechugas. Luego podrás incorporar Zanahorias, Berenjenas y hasta plantas de Albahaca.</p>
+            </div>
+            <img src="./img/paso-2.jpg" class="img-pasos" alt="">
+        </div>
+        <div class="pasos-container">
+            
+            <div class="text-container">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+                <h2>Cosecha lo que siembras</h2>
+                <p>Quizas esta sea la mejor parte del proceso. La cosecha es el resultado de largos dias, semanas o meses de trabajo para poder llevar productos frescos y naturales a tu mesa.</p>
+            </div>
+            <img src="./img/paso-3.jpg" class="img-pasos" alt="">
+        </div>
+    </section>
+    <!-- Contacto -->
+    <section class="contact-container section" id="contact-us">
+        <div class="contact-text">
+            <h2>¡Contactanos!</h2>
+            <p>Queremos saber como te fue o si tenes alguna duda. Estamos para ayudarte en este proceso.</p>
+        </div>
+        <div class="contact">
+            <div class="contact-datos">
+                <h2>Nuestros datos</h2>
+                <div class="datos">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Mercedes, Buenos Aires.</p>
+                </div>
+                <div class="datos">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    +54 9 0000 000000
+                </div>
+                <div class="datos">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>joaquinivaldis2@gmail.com</p>
+                </div>
+                <div class="datos">
+                    <i class="fa-brands fa-instagram"></i>
+                    <p>@joacoivaldis7</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="name-mail">
+                    <input type="text" name="nombre-apellido" placeholder="Nombre y Apellido">
+                    <input type="email" name="email" placeholder="E-Mail">
+                </div>
+                <input type="number" class="form-i3" name="telefono" placeholder="Teléfono">
+                <textarea name="mensaje" class="form-i4" placeholder="Escribí tu mensaje acá..."></textarea>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
