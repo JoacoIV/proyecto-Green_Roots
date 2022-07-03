@@ -559,3 +559,12 @@ img {
     color: var(--detail-color);
 }
 
+@media (max-width:670px) {
+    .footer{
+        gap: 10px;
+    }
+    .footer img {
+        display: none;
+    }
+}
+
